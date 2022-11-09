@@ -1,0 +1,11 @@
+
+
+nav.navbar img.logo {
+    width: 15%;
+    max-width: 80px;  
+}
+
+.navbar {
+    background-color: rgb(142, 195, 195);
+}
+

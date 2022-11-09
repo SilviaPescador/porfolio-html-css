@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsfolio</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <header>
+      <nav class ="navbar">
+        <img class="logo" src="/porfolio-sil/images/microscope.png" alt="microscope">
+        <nav class ="menu">
+            <ul>
+              <li>
+                <a href="#">Sobre mi</a>
+              </li>
+              <li>
+                <a href="#">Skills</a>
+              </li>
+              <li>
+                <a href="#">Formulario</a>
+              </li>
+            </ul>
+          </nav>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+          <article>
+            <p>
+              <h1>Sobre mi</h1>
+              Hola, soy Microscopio y tengo una experiencia brutal buscando virus.</p>
+          </article>
+        </section>
+        <section>
+          <h1>skills</h1>
+        </section>
+        <section>
+          <h1>Contacto</h1>
+          <form action="user-registration.html" method="post" novalidate>
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="escribe tu nombre">
+            </div>
+            <div>
+                <label for="second">Apellidos</label>
+                <input type="text" name="second" id="second" placeholder="escribe tus apellidos">
+            </div>
+            <div>
+                <label for="phone">Teléfono</label>
+                <input type="tel" name="phone" id="phone" placeholder="escribe tu móvil :)" pattern="[0-9]+">
+            </div>
+
+            <fieldset>
+              <legend>¿Cuándo me conociste?</legend>
+
+              <label for="uv">Universidad</label>
+              <input required id="uv" type="radio" name="quiz" value="uv">
+
+              <label for="kd">Con el Ciencianova</label>
+              <input required id="kd" type="radio" name="quiz" value="kd">
+
+              <label for="nn">En algun nickname de internet</label>
+              <input required id="nn" type="radio" name="quiz" value="nn">
+
+              <label for="yet">Aún no te conozco en persona</label>
+              <input required id="yet" type="radio" name="quiz" value="yet">
+            </fieldset>
+            <input type="submit" value="Clic y envía">
+
+          </form>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
