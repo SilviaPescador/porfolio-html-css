@@ -1,11 +1,52 @@
-
+:root {
+    --pink-lavender: #e4bae9ff;
+    --beau-blue: #c0dafaff;
+    --dark-sky-blue: #9dc2d5ff;
+    --cadet-blue-crayola: #9fabbfff;
+    --dim-gray: #6b686aff;
+    /* TITLES */
+    --black: #000000ff;
+    --charcoal: #3F5461ff;
+    --jet: #2D2F31ff;
+    }
 
 nav.navbar img.logo {
     width: 15%;
-    max-width: 80px;  
+    max-width: 80px;
+    ; 
 }
 
-.navbar {
-    background-color: rgb(142, 195, 195);
+.body {
+    /* background-color: #8ec3c3; */
+    background: linear-gradient(white, #9BBED3ff)
+}
+.header {
+    background :white
+}
+.navbar .link {
+    color: #FFF;
+    /*oculto en mobile*/
+    visibility: hidden;
+    display: none;
 }
 
+.aside {
+
+}
+
+
+.skillbar {
+    width: 100%; /* Full width */
+    background-color: #fff; /* Grey background */
+  }
+
+.skills {
+text-align: right; /* Right-align text */
+padding-top: 0,1%; /* Add top padding */
+padding-bottom: 0,1%;/* Add bottom padding */
+color: white; /* White text color */
+}
+.bew {width: 90%; background-color:var(--pink-lavender);}
+.hair {width: 80%; background-color: var(--dark-sky-blue);} 
+.vir {width: 30%; background-color:var(--cadet-blue-crayola) ;} 
+.focus {width: 60%; background-color: var(--dim-gray);}
