@@ -39,7 +39,6 @@ footer {
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-style: var(--charcoal);
     
 }
 
@@ -48,6 +47,11 @@ h2, legend {
     margin: 1em;
     font-weight: bold;
 
+}
+
+p {
+    text-align:justify;
+    
 }
 
 /* HEADER */
@@ -65,13 +69,9 @@ h2, legend {
 }
 
 .logo {
-    width: 80%;
+    width: 100%;
     max-width: 80px; 
 }
-
- .logo-zone span {
-    font-size: 0.8em;
- }
 
  .menu {
 
@@ -129,15 +129,47 @@ main_menu li {
 
 /* MAIN:  */
 
-.aside {
-    margin-bottom: 10x;
-
+.my-work {
+    padding-top: 3em;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
 }
 
-.fieldset {
+.my-work-img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.my-work p {
+    text-align: center;
+}
+
+.aside {
+
+    margin: 2em;
+}
+.contacto {
+
+    padding-top: 3em;
+}
+
+fieldset.about-me {
     background-color: rgb(209, 230, 234);
     border-radius: 1em;
+        
+}
+
+fieldset.quiz {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    display:flex;
+    align-items: left;
+    column-gap: 1em;
+    flex-direction: column;
     
+
 
 }
 
@@ -234,4 +266,30 @@ main_menu li {
     }   
 }
 
+/* Conctacto - formulario */
 
+textarea {
+    height: 100px;
+}
+
+.message {
+    display: flex;
+    align-items: s;
+    margin-top: 1em;
+}
+
+button {
+    margin-top: 1em;
+    background-color: #fff;
+    color: var(--charcoal);
+    cursor: pointer;
+    border-color: var(--dark-sky-blue);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+}
+
+
+/* footer - social media */
+
+.socialmedia img {
+    imag
+}

@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
   <div class="page">
     
       <header>
@@ -21,7 +22,7 @@
 
             <div class="logo-zone">
 
-              <img class="logo" src="/practica-porfolio/images/microscope.png" alt="mic-logo">
+              <img class="logo" src="images/microscope.png" alt="mic-logo">
               <!-- <span>SvP</span> -->
 
             </div>
@@ -48,13 +49,13 @@
 
       <main>
 
-          <aside class="aside">
+          <aside>
 
-            <article class= "article">
-
+            <article class= "sobremi">
               <h2 class ="title-section">Sobre mi</h2>
 
-              <fieldset class="fieldset">
+              <fieldset class="about-me">
+
               <p>
                 Hola, soy Microscopio y tengo una experiencia muy amplia encontrando virus, bacterias, y un sinfín de elementos invisibles al ojo humano. 
                 <br>
@@ -63,16 +64,39 @@
                 El ocasiones es frustrante, pero ya estoy acostumbrado. 
               </p>
 
-            </fieldset>
-
+              </fieldset>
 
             </article>
 
-          </aside class="skills-progress">
+          </aside>
 
-          <aside>
+          <section class="my-work">
 
-            <h2 class ="title-section">skills</h2>
+            <article>
+              <img class = "my-work-img" src="images/bug.png" alt="Una mosca al microscopio">
+              <p>Un amigo</p>
+
+            </article>
+
+            <article>
+
+              <img class = "my-work-img" src="images/cellfie-time.jpg" alt="Cellfie time ;)">
+              <p>¡Este soy yo!</p>
+      
+            </article>
+
+            <article>
+
+              <img class = "my-work-img" src="images/cells.png" alt="Células al microscopio">
+              <p>Hallazgos</p>
+      
+            </article>
+
+          </section>
+
+          <aside class="skills" >
+
+            <h2>skills</h2>
 
             <p>Ser ojeado</p>
             <div class="skillbar">
@@ -96,9 +120,9 @@
 
           </aside>
 
-          <aside class="contact">
+          <div class="contacto">
 
-            <h2 class ="title-section">Contacta conmigo</h2>
+            <h2>Contacta conmigo</h2>
 
             <form action="user-registration.html" method="post" novalidate>
 
@@ -117,10 +141,8 @@
                   <input type="tel" name="phone" id="phone" placeholder="escribe tu móvil :)" pattern="[0-9]+">
               </div>
 
-              <hr>
-
-              <fieldset class = "fieldset">
-
+              
+              <fieldset class="quiz">
                 <legend>¿Cuándo me echaste un ojo por primera vez?</legend>
 
                 <label for="uv">Universidad</label>
@@ -135,38 +157,47 @@
                 <label for="yet">Aún no te he echado un ojo</label>
                 <input required id="yet" type="radio" name="quiz" value="yet">
 
-                
+              </fieldset>  
 
-                <label for="michub">Compárteme tu MicHub 😉</label>
-                <input type="text" id ="michub" name="quiz" pattern = ^@[^\s]+" value = "@">
 
-              </fieldset>
+              <label for="michub">Compárteme tu MicHub 😉</label>
+              <input type="text" id ="michub" name="quiz" pattern = ^@[^\s]+" value = "@">
 
-              <fieldset>
+             
+
+              <fieldset class="message">
 
                 <div class="fieldset-item message">
                     <label for="mensaje">Déjame un mensaje microscópico</label>
                     <textarea id="mensaje" maxlength="180" placeholder="Max. 180 caracteres"></textarea>
                 </div>
 
-            </fieldset>
+              </div>
 
-              <button type="submit">Clic y envía</button>
+          </fieldset>
 
-            </form>
+            <button type="submit">Clic y envía</button>
 
-          </aside>
+          </form>
+
+          
 
       </main>
 
       <footer>
 
-        <nav>
-          <a href="http://" target="_blank" rel="noopener noreferrer">Linkedin</a>
-          <a href="https://github.com/SilviaPescador/porfolio-html-css" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </nav>
+        <nav class = "socialmedia">
+          <a href="https://www.linkedin.com/in/silviapescadorlopez/" target="_blank" >Linkedin</a>
+          <img src="" alt="">
 
-      <a target="_blank" href="https://www.instagram.com/my.microscopic.world/">see some of my work</a>
+
+          <a href="https://github.com/SilviaPescador/porfolio-html-css" target="_blank">GitHub</a>
+          <img src="" alt="">
+        
+          <a target="_blank" href="https://www.instagram.com/my.microscopic.world/">see some of my work</a>
+          <img src="" alt="">
+
+        </nav>
       
       </footer>
   </div>   
