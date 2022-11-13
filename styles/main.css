@@ -1,4 +1,7 @@
-:root {
+
+/* MOBILE: AJUSTES GENERALES/ GENERAL SETTINGS */
+
+:root { 
     --pink-lavender: #e4bae9ff;
     --beau-blue: #c0dafaff;
     --dark-sky-blue: #9dc2d5ff;
@@ -8,45 +11,227 @@
     --black: #000000ff;
     --charcoal: #3F5461ff;
     --jet: #2D2F31ff;
+
     }
 
-nav.navbar img.logo {
-    width: 15%;
-    max-width: 80px;
-    ; 
+body, .navbar-2 {
+    /* background-color: #8ec3c3; */
+    background-image: url(/practica-porfolio/images/ba-lab-wellness-.png);
+    background-size: 200%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-size: 18px  */
 }
 
-.body {
-    /* background-color: #8ec3c3; */
-    background: linear-gradient(white, #9BBED3ff)
+.page {
+    width: 92%;
+    margin: 0px auto;
+    max-width: 700px;
+    background: linear-gradient(white, whitesmoke);
 }
-.header {
-    background :white
+
+main {
+    margin: auto 0.8em auto 0.8em;
 }
-.navbar .link {
-    color: #FFF;
-    /*oculto en mobile*/
-    visibility: hidden;
-    display: none;
+
+footer {
+
 }
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: var(--charcoal);
+    
+}
+
+h2, legend {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 1em;
+    font-weight: bold;
+
+}
+
+/* HEADER */
+
+/* navbar-1 : Logo and menu  */
+
+.navbar-1 {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 80%;
+    max-width: 80px; 
+}
+
+ .logo-zone span {
+    font-size: 0.8em;
+ }
+
+ .menu {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    display: none; 
+    margin-right: 10px;
+}
+
+
+.menu main_menu {
+    list-style: none;
+}
+    
+main_menu li {
+    display: inline-block;
+    border:none;
+    padding: 1px;
+    border-radius: 10px 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menu a:hover {
+    color: var(--pink-lavender);
+    text-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-1 .menu {
+        display: flex;
+    }
+}
+
+/* navbar-2 : Intro  */
+
+.navbar-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 0em;
+}
+
+.intro {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+/* MAIN:  */
 
 .aside {
+    margin-bottom: 10x;
 
 }
 
+.fieldset {
+    background-color: rgb(209, 230, 234);
+    border-radius: 1em;
+    
+
+}
 
 .skillbar {
-    width: 100%; /* Full width */
+    width: 60%;  
     background-color: #fff; /* Grey background */
   }
 
 .skills {
-text-align: right; /* Right-align text */
-padding-top: 0,1%; /* Add top padding */
-padding-bottom: 0,1%;/* Add bottom padding */
-color: white; /* White text color */
+
+    text-align: right; /* Right-align text */
+    padding-top: 0,3%; /* Add top padding */
+    padding-bottom: 0,3%;/* Add bottom padding */
+    color: white; /* White text color */
 }
-.bew {width: 90%; background-color:var(--pink-lavender);}
-.hair {width: 80%; background-color: var(--dark-sky-blue);} 
-.vir {width: 30%; background-color:var(--cadet-blue-crayola) ;} 
-.focus {width: 60%; background-color: var(--dim-gray);}
+.bew {
+    width: 90%; 
+    background-color:var(--pink-lavender);
+    border-radius: 1em;
+}
+.hair {
+    width: 80%; 
+    background-color: var(--dark-sky-blue);
+    border-radius: 1em
+} 
+.vir {
+    width: 30%; 
+    background-color:var(--cadet-blue-crayola);
+    border-radius: 1em
+} 
+.focused {
+    width: 60%; 
+    background-color: var(--dim-gray);
+    border-radius: 1em
+}
+
+
+/* Skillbar animada */
+
+.skills.bew {
+    animation-name: be_watched;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+   }
+
+@keyframes be_watched {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 90%;
+    }   
+  }
+
+.skills.hair {
+    animation-name: hair_exp;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+   }
+@keyframes hair_exp {
+    from {
+    width: 0%;
+    }
+    to {
+    width: 80%;
+    }   
+}
+
+.skills.vir {
+    animation-name: find_vir;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+@keyframes find_vir {
+    from {
+    width: 0%;
+    }
+    to {
+    width: 30%;
+    }   
+}
+
+.skills.focused {
+    animation-name: stay_focused;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+   }
+@keyframes stay_focused {
+    from {
+    width: 0%;
+    }
+    to {
+    width: 60%;
+    }   
+}
+
+

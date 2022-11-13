@@ -6,130 +6,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microsfolio</title>
+
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
 
 </head>
 
-<body class="body">
- 
-    <header class="header">
-      <nav class ="navbar">
-        <img class="logo" src="images/microscope.png" alt="microscope">
-        <nav class ="menu">
-            <a class= "link" href="#">Sobre mi</a>
-            <a class= "link" href="#">Skills</a>
-            <a class= "link" href="#">Formulario</a>
-          </nav>
-        </nav>
-    </header>
+<body>
+  <div class="page">
+    
+      <header>
 
-    <main class = "main">
+          <div class="navbar-1">
 
-      <h1 class="title">Portfolio de un Microscopio</h1>
+            <div class="logo-zone">
 
-        <aside class="aside">
+              <img class="logo" src="/practica-porfolio/images/microscope.png" alt="mic-logo">
+              <!-- <span>SvP</span> -->
 
-          <article class= "article">
-
-            <h1 class="title">Sobre mi</h1>
-            <p>
-              Hola, soy Microscopio y tengo una experiencia brutal buscando virus. 
-              <br>
-              Aun así, el grueso de mi experiencia es con las personas, siendo ojeado. 
-            </p>
-
-          </article>
-
-        </aside class="aside">
-
-        <aside>
-
-          <h1 class="title">skills</h1>
-
-          <p>Ser ojeado</p>
-          <div class="skillbar">
-            <div class="skills bew">90%</div>
-          </div>
-
-          <p>Explorar cabello humano</p>
-          <div class="skillbar">
-            <div class="skills hair">80%</div>
-          </div>
-
-          <p>Encontrar virus</p>
-          <div class="skillbar">
-            <div class="skills vir">30%</div>
-          </div>
-
-          <p>Estar enfocado</p>
-          <div class="skillbar">
-            <div class="skills focus">60%</div>
-          </div>
-
-        </aside>
-
-        <aside class="aside">
-
-          <h1 class="title">Contacto</h1>
-
-          <form action="user-registration.html" method="post" novalidate>
-
-            <div>
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" placeholder="escribe tu nombre">
             </div>
 
-            <div>
-                <label for="second">Apellidos</label>
-                <input type="text" name="second" id="second" placeholder="escribe tus apellidos">
-            </div>
+            <nav class ="menu">
 
-            <div>
-                <label for="phone">Teléfono</label>
-                <input type="tel" name="phone" id="phone" placeholder="escribe tu móvil :)" pattern="[0-9]+">
-            </div>
+                <ul id='main_menu'>
+                  <li><a href="#sobremi">Sobre mi</a></li>
+                  <li><a href='#skills'>Skills</a></li>
+                  <li><a href='#contacto'>contacto</a></li>
+                </ul>
 
-            <hr>
+            </nav>
+            
+          </div>
 
-            <fieldset class = "fieldset">
+        <div class ="navbar-2">
 
-              <legend>¿Cuándo me echaste un ojo por primera vez?</legend>
+          <h1 class ="intro">Portfolio de un Microscopio</h1>
 
-              <label for="uv">Universidad</label>
-              <input required id="uv" type="radio" name="quiz" value="uv">
+        </div>
 
-              <label for="kd">Con el Ciencianova</label>
-              <input required id="kd" type="radio" name="quiz" value="kd">
+      </header>
 
-              <label for="nick">En algun nickname de internet</label>
-              <input required id="nick" type="radio" name="quiz" value="nick">
+      <main>
 
-              <label for="yet">Aún no te he echado un ojo</label>
-              <input required id="yet" type="radio" name="quiz" value="yet">
+          <aside class="aside">
 
-              <hr>
+            <article class= "article">
 
-              <label for="michub">Compárteme tu MicHub 😉</label>
-              <input type="text" id ="michub" name="quiz" pattern = "^(?=.{4,32}$)(?![_.-])(?!.*[_.]{2})[a-zA-Z0-9._-]+(?<![_.])$" value = "@">
+              <h2 class ="title-section">Sobre mi</h2>
+
+              <fieldset class="fieldset">
+              <p>
+                Hola, soy Microscopio y tengo una experiencia muy amplia encontrando virus, bacterias, y un sinfín de elementos invisibles al ojo humano. 
+                <br>
+                Aun así, el grueso de mi experiencia es siendo ojeado por millones de personas. 
+                <br> 
+                El ocasiones es frustrante, pero ya estoy acostumbrado. 
+              </p>
 
             </fieldset>
 
-            <input type="submit" value="Clic y envía">
 
-          </form>
+            </article>
 
-        </aside>
+          </aside class="skills-progress">
 
-    </main>
+          <aside>
 
-    <footer class = "footer">
-      <nav>
-        <a href="http://" target="_blank" rel="noopener noreferrer">Linkedin</a>
-        <a href="https://github.com/SilviaPescador/porfolio-html-css" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </nav>
-    </footer>
-    
+            <h2 class ="title-section">skills</h2>
+
+            <p>Ser ojeado</p>
+            <div class="skillbar">
+              <div class="skills bew">90%</div>
+            </div>
+
+            <p>Explorar cabello humano</p>
+            <div class="skillbar">
+              <div class="skills hair">80%</div>
+            </div>
+
+            <p>Encontrar virus</p>
+            <div class="skillbar">
+              <div class="skills vir">30%</div>
+            </div>
+
+            <p>Estar enfocado</p>
+            <div class="skillbar">
+              <div class="skills focused">60%</div>
+            </div>
+
+          </aside>
+
+          <aside class="contact">
+
+            <h2 class ="title-section">Contacta conmigo</h2>
+
+            <form action="user-registration.html" method="post" novalidate>
+
+              <div>
+                  <label for="name">Nombre</label>
+                  <input type="text" name="name" id="name" placeholder="escribe tu nombre">
+              </div>
+
+              <div>
+                  <label for="second">Apellidos</label>
+                  <input type="text" name="second" id="second" placeholder="escribe tus apellidos">
+              </div>
+
+              <div>
+                  <label for="phone">Teléfono</label>
+                  <input type="tel" name="phone" id="phone" placeholder="escribe tu móvil :)" pattern="[0-9]+">
+              </div>
+
+              <hr>
+
+              <fieldset class = "fieldset">
+
+                <legend>¿Cuándo me echaste un ojo por primera vez?</legend>
+
+                <label for="uv">Universidad</label>
+                <input required id="uv" type="radio" name="quiz" value="uv">
+
+                <label for="kd">Con el Ciencianova</label>
+                <input required id="kd" type="radio" name="quiz" value="kd">
+
+                <label for="nick">En algun nickname de internet</label>
+                <input required id="nick" type="radio" name="quiz" value="nick">
+
+                <label for="yet">Aún no te he echado un ojo</label>
+                <input required id="yet" type="radio" name="quiz" value="yet">
+
+                
+
+                <label for="michub">Compárteme tu MicHub 😉</label>
+                <input type="text" id ="michub" name="quiz" pattern = ^@[^\s]+" value = "@">
+
+              </fieldset>
+
+              <fieldset>
+
+                <div class="fieldset-item message">
+                    <label for="mensaje">Déjame un mensaje microscópico</label>
+                    <textarea id="mensaje" maxlength="180" placeholder="Max. 180 caracteres"></textarea>
+                </div>
+
+            </fieldset>
+
+              <button type="submit">Clic y envía</button>
+
+            </form>
+
+          </aside>
+
+      </main>
+
+      <footer>
+
+        <nav>
+          <a href="http://" target="_blank" rel="noopener noreferrer">Linkedin</a>
+          <a href="https://github.com/SilviaPescador/porfolio-html-css" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+
+      <a target="_blank" href="https://www.instagram.com/my.microscopic.world/">see some of my work</a>
+      
+      </footer>
+  </div>   
 </body>
 
 </html>
