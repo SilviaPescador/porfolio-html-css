@@ -31,7 +31,7 @@
 
                 <ul id='main_menu'>
                   <li><a href="#sobremi">Sobre mi</a></li>
-                  <li><a href='#skills'>Skills</a></li>
+                  <li><a href='#meritos'>Skills</a></li>
                   <li><a href='#contacto'>contacto</a></li>
                 </ul>
 
@@ -51,7 +51,7 @@
 
           <aside>
 
-            <article class= "sobremi">
+            <article id = "sobremi">
               <h2 class ="title-section">Sobre mi</h2>
 
               <fieldset class="about-me">
@@ -73,6 +73,7 @@
           <section class="my-work">
 
             <article>
+
               <img class = "my-work-img" src="images/bug.png" alt="Una mosca al microscopio">
               <p>Un amigo</p>
 
@@ -94,9 +95,9 @@
 
           </section>
 
-          <aside class="skills" >
+          <aside id="meritos">
 
-            <h2>skills</h2>
+            <h2>Skills</h2>
 
             <p>Ser ojeado</p>
             <div class="skillbar">
@@ -120,7 +121,7 @@
 
           </aside>
 
-          <div class="contacto">
+          <div class="contacto" id="contacto">
 
             <h2>Contacta conmigo</h2>
 
@@ -143,44 +144,39 @@
 
               
               <fieldset class="quiz">
-                <legend>¿Cuándo me echaste un ojo por primera vez?</legend>
+                  <legend>¿Cuándo me echaste un ojo por primera vez?</legend>
 
-                <label for="uv">Universidad</label>
-                <input required id="uv" type="radio" name="quiz" value="uv">
+                  <label for="uv">En la Universidad</label>
+                  <input required id="uv" type="radio" name="quiz" value="uv">
 
-                <label for="kd">Con el Ciencianova</label>
-                <input required id="kd" type="radio" name="quiz" value="kd">
+                  <label for="kd">Con el Ciencianova</label>
+                  <input required id="kd" type="radio" name="quiz" value="kd">
 
-                <label for="nick">En algun nickname de internet</label>
-                <input required id="nick" type="radio" name="quiz" value="nick">
+                  <label for="nick">En algún nickname de internet</label>
+                  <input required id="nick" type="radio" name="quiz" value="nick">
 
-                <label for="yet">Aún no te he echado un ojo</label>
-                <input required id="yet" type="radio" name="quiz" value="yet">
+                  <label for="yet">Aún no te he echado un ojo</label>
+                  <input required id="yet" type="radio" name="quiz" value="yet">
 
               </fieldset>  
 
-
-              <label for="michub">Compárteme tu MicHub 😉</label>
-              <input type="text" id ="michub" name="quiz" pattern = ^@[^\s]+" value = "@">
-
-             
+              <fieldset>
+                  <label for="michub">Compárteme tu MicHub 😉</label>
+                  <input type="text" id ="michub" name="quiz" pattern = ^@[^\s]+" value = "@">
+              </fieldset>
 
               <fieldset class="message">
 
-                <div class="fieldset-item message">
-                    <label for="mensaje">Déjame un mensaje microscópico</label>
+                <div>
+                    <label for="mensaje">Escríbeme</label>
                     <textarea id="mensaje" maxlength="180" placeholder="Max. 180 caracteres"></textarea>
                 </div>
 
-              </div>
+              </fieldset>
 
-          </fieldset>
+              <button type="submit">Clic y envía</button>
 
-            <button type="submit">Clic y envía</button>
-
-          </form>
-
-          
+            </form>
 
       </main>
 
@@ -199,7 +195,7 @@
         </nav>
       
       </footer>
-  </div>   
+    
 </body>
 
 </html>
